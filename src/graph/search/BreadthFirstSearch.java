@@ -1,6 +1,6 @@
 package graph.search;
 
-import graph.Node;
+import model.Node;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -8,17 +8,19 @@ import java.util.Queue;
 
 public class BreadthFirstSearch {
     HashSet<String> visited;
-    /*
+       /*
                         -------A1-------
                        |                |
                   -----B2           ----A2------
                   |                |            |
              -----B3              A3         ---C3
             |                               |
-           B4 ----------------------------- C4
-
+           B4                               C4
+           |                                |
+           -----------------   -------------
+                             |
+                            END
      */
-
 
     public BreadthFirstSearch(){
         visited = new HashSet<>();
